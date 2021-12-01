@@ -32,4 +32,4 @@ jobs:
         cd ./SimpleMathLibraryX/bin/release |
         dotnet nuget push SimpleMathLibraryX.1.0.0.nupkg --api-key ${NUGET_KEY} --source ${NUGET_FEED}
     - name: Show a secret
-      run: echo "${{ NUGET_FEED}"
+      run: echo "${{ NUGET_FEED}}"
