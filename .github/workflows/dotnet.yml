@@ -29,7 +29,7 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Nuget
       run: |
-        cd ../../dotnetcore-nuget-publish-actions/dotnetcore-nuget-publish-actions/SimpleMathLibraryX/bin/release
+        cd ../dotnetcore-nuget-publish-actions/dotnetcore-nuget-publish-actions/SimpleMathLibraryX/bin/release
         dotnet nuget push SimpleMathLibraryX.1.0.0.nupkg --api-key ${NUGET_KEY} --source ${NUGET_FEED}
     - name: Show a secret
       run: echo "${ NUGET_FEED } -- ${ NUGET_KEY }"
